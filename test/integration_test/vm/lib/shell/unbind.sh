@@ -19,5 +19,5 @@ for OPT in $OPTS; do
     echo "$PCI,$DEV"
 
     sudo ifconfig $DEV down
-    sudo $RTE_SDK/tools/dpdk_nic_bind.py --bind=igb_uio $PCI
+    sudo $RTE_SDK/tools/dpdk-devbind.py --bind=igb_uio $PCI
 done

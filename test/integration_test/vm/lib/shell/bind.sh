@@ -16,5 +16,5 @@ fi
 for OPT in $OPTS; do
     echo "$OPT"
 
-    sudo $RTE_SDK/tools/dpdk_nic_bind.py -b e1000 $OPT
+    sudo $RTE_SDK/tools/dpdk-devbind.py -b e1000 $OPT
 done
