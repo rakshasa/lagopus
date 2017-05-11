@@ -30,3 +30,4 @@ libvirt:
 
 virtualbox:
   intnet_name: intnet
+  auto_update: false

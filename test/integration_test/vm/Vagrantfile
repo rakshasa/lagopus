@@ -54,6 +54,8 @@ Vagrant.configure(2) do |config|
         vb.cpus = host["cpus"]
         vb.memory = host["memory"]
 
+        h.vbguest.auto_update = confs["virtualbox"]["auto_update"]
+
         # set promiscuous mode.
         opts = ["modifyvm", :id]
         interfaces = host["interfaces"].size - 1
